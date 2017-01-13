@@ -1,0 +1,18 @@
+.quote_class{
+    align-self: center;
+}
+
+div{
+    max-width: 50%;
+}
+
+.justify_text{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+    margin-top: 20%;
+}
