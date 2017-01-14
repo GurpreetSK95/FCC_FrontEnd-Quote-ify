@@ -3,13 +3,14 @@
  */
 
 $(document).ready(function () {
-   $("#quote_button").on("click", function () {
-       //TODO: issue in api
-       $.getJSON("http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=",
-       function (json) {
-           // var content = val[0].content;
-           // var title = val[0].title;
-           $(".quote").html(JSON.stringify(json));
-       });
-   });
+    $("body").on("click", function () {
+        //TODO: issue in api
+        $.getJSON("http://quotes.stormconsultancy.co.uk/random.json",
+            function (json) {
+                var quote = json.quote;
+                var author = json.author;
+                $(".quote").html(quote);
+                $(".author").html("- " + author);
+            });
+    });
 });
