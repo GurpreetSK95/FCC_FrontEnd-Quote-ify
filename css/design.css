@@ -1,9 +1,6 @@
-.quote_class{
-    align-self: center;
-}
-
 div{
     max-width: 50%;
+    font-family: "Times New Roman", serif;
 }
 
 .justify_text{
@@ -15,4 +12,9 @@ div{
     float: none;
     margin: 0 auto;
     margin-top: 20%;
+}
+
+.share_button{
+    margin-top: 10px;
+    background-color: transparent;
 }

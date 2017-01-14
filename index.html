@@ -5,23 +5,29 @@
     <title>Title</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/design.css">
-    <!--<link rel="script" href="js/baseScript.js">-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/baseScript.js"></script>
-
 </head>
 
 <body>
 <div class="container-fluid well col-centered col-xs-4">
     <!--TODO: finalize on well class in div-->
-
     <h4 class="quote">Never give up</h4>
     <h5 class="author pull-right"></h5>
 </div>
-
+<!--<button class="btn btn-share center-block share_button"><i class="fa fa-twitter" aria-hidden="true"></i> Share</button>-->
+<button class="btn center-block share_button">
+<!--<a class="twitter-share-button" href="https://twitter.com/intent/tweet" data-text="Uh-Oh!" data-via="Quote-ify">-->
+    <i class="fa fa-twitter">
+         Tweet
+    </i>
+<!--</a>-->
+</button>
 <div style="position: absolute; bottom: 10px; right: 10px; width: 200px; text-align:right;">
-    Click anywhere for next quote!
+    Click inside the box for next quote!
 </div>
+<script src="js/baseScript.js"></script>
 </body>
 </html>

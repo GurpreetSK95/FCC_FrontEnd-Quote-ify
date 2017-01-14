@@ -3,7 +3,7 @@
  */
 
 $(document).ready(function () {
-    $("body").on("click", function () {
+    $("div").on("click", function () {
         //TODO: issue in api
         $.getJSON("http://quotes.stormconsultancy.co.uk/random.json",
             function (json) {
@@ -13,4 +13,8 @@ $(document).ready(function () {
                 $(".author").html("- " + author);
             });
     });
+    $('.share_button').on("click", function () {
+        window.open('http://twitter.com/share?text=' + $(".quote").html() + $(".author").html());
+    });
+
 });
