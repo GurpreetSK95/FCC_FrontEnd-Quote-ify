@@ -11,6 +11,9 @@ $(document).ready(function () {
                 var author = json.author;
                 $(".quote").html(quote);
                 $(".author").html("- " + author);
+                // var color = colors[Math.floor(Math.random() * 15) + 1];
+                // $("body").css("background", color);
+                // $("div").css("background", color);
             });
     });
     $('.share_button').on("click", function () {
